@@ -1,3 +1,5 @@
+### @explicitHints 1
+
 # My Tutorial
 
 ## Step 1
