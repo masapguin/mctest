@@ -1,54 +1,43 @@
-# Mega Jump: Blocks
+### @hideIteration false 
+### @explicitHints 1
+
+
+# Lesson 1
 
 ## Step 1
-Rename the existing ``||player:on chat||`` command into **“jump”**. 
-
-```blocks
-player.onChat("jump", function () { 
-}) 
-```
+To code a conversation with your Agent select an ``||player:on chat||`` command and rename it from **run** to **hello**. Select a ``||player: say||`` command and drag it inside the ``||player:on chat||`` command.
 
 ## Step 2
-
-Place a ``||player:player teleport to||`` inside the ``||player:on chat||`` command **jump** and enter **100** in the **“y”** coordinate. 
-
-```blocks
-player.onChat("jump", function () { 
-   player.teleport(pos(0,100,0))  
-}) 
-```
+Type **Hi, I am your Agent!** inside the ``||player: say||`` command. When done, press the **Play** buton to compile the code, then go to Minecraft, press **T** and type **hello**.
 
 ## Step 3
-
-Try it out in Minecraft by typing **jump** in the chat.
-
+Go back to your code and modify the conversation with the Agent. 
 
 ## Step 4
-
- Click the (+) inside the ``||player:on chat||`` command jump and create a new ``||variable: variable||`` named **num1**. 
-
-```blocks
-player.onChat("jump", function (num1) {
-    player.teleport(pos(0, 100, 0))
-})
-```
+To teleport your Agent to different places select a new ``||player: on chat||`` command, drag it to the workspace and rename it to **come_here**. 
 
 ## Step 5
-
-Get the new ``||variable||`` named num1 and drag it into the **y** coordinate of the ``||player:teleport to||``. 
-
-```blocks
-player.onChat("jump", function (num1) {
-    player.teleport(pos(0, num1, 0))
-})
-```
+Drag an ``||agent:agent teleport to player||`` command and drop it inside the ``||player: on chat||`` command. 
 
 ## Step 6
+When done, press the **Play** button to compile the code, then go to the Minecraft world, press **T** and type **come_here**.
 
-Try it out in Minecraft by entering **jump** and then any number in the chat.  (Example jump 50, or jump 100). 
+## Step 7
+To code your Agent to rotate select a new ``||player: on chat||`` command, drag it to the workspace and rename it to **turn**. 
 
-```blocks
-player.onChat("jump", function (num1) {
-    player.teleport(pos(0, num1, 0))
+## Step 8
+Drag an ``||agent: agent turn||`` command and drop it inside the ``||player: on chat||`` command. You can decide which direction the Agent is going to rotate. 
+
+## Step 9
+When done, press the **Play** button to compile the code, then go to the Minecraft world, press **T** and type **turn**.
+
+## Step 10 
+Now you can practice using these commands in different combinations. 
+
+```ghost
+player.onChat("run", function () {
+    player.say(":)")
+    agent.teleportToPlayer()
+    agent.turn(LEFT_TURN)
 })
-```
+``` 
