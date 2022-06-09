@@ -1,10 +1,3 @@
-### @codeStart players set @s makecode 0
-### @codeStop players set @s makecode 1
-
-
-### @flyoutOnly 1
-### @explicitHints 1
-
 # Test Tutorial
 
 ## Step 1
