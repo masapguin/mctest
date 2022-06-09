@@ -1,0 +1,20 @@
+{
+    "name": "mctest",
+    "version": "8.0.2",
+    "dependencies": {
+        "core": "*",
+        "builder": "*"
+    },
+    "files": [
+        "mctest.md",
+        "lesson/lesson1/testlesson.md"
+    ],
+    "targetVersions": {
+        "target": "1.6.8",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
