@@ -7,7 +7,7 @@
     },
     "files": [
         "mctest.md",
-        "lesson/testlesson.md"
+        "lesson/testlesson.md",
         "lesson/lesson1/testlesson.md"
     ],
     "targetVersions": {
