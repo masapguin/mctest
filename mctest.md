@@ -1,11 +1,9 @@
-### @explicitHints 1
-
-# My Tutorial
+# Test
 
 ## Step 1
+Rename the existing ``||player:on chat||`` command into **“test”**. 
 
-Here is some text.
-
-## Step 2
-
-Congratulations, you did it!
+```blocks
+player.onChat("test", function () { 
+}) 
+```
